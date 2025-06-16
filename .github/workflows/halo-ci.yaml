@@ -1,0 +1,11 @@
+name: Halo CI Sederhana # Nama workflow, akan tampil di tab Actions GitHub
+
+on: [push] # Memicu workflow ini setiap kali ada 'push' ke repository
+
+jobs: # Daftar pekerjaan yang akan dilakukan
+  say-hello: # Nama job (bisa apa saja)
+    runs-on: ubuntu-latest # Jenis mesin virtual yang akan menjalankan job ini
+
+    steps: # Daftar langkah-langkah dalam job
+      - name: Cetak Pesan Halo
+        run: echo "Halo dari GitHub Actions CI!"
